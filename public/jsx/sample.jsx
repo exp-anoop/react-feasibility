@@ -23,7 +23,7 @@ var QuantityForm = React.createClass({
     returnQuantity: function(e) {
         e.preventDefault();
         var quantityRef = this.refs.quantity;
-        var quantity = parseInt(quantityRef.value);
+        var quantity = parseInt(quantityRef.value) || 0;
         // quantityRef.value = 0;
         this.props.onQuantityUpdate(quantity);
     },
@@ -78,7 +78,6 @@ var ProductList = React.createClass({
             <div>
                 <ProductItem name="Apple" price={200}/>
                 <ProductItem name="Samsung" price={140}/>
-                <ProductItem name="Nokia" price={130}/>
             </div>
         );
     }
