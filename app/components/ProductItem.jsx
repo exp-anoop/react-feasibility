@@ -1,7 +1,7 @@
-var React = require('react');
+import React from 'react';
 
-var ProductView = require('ProductView');
-var QuantityForm = require('QuantityForm');
+import ProductView from 'ProductView';
+import QuantityForm from 'QuantityForm';
 
 var ProductItem = React.createClass({
     getDefaultProps: function() {

@@ -1,6 +1,5 @@
-var React = require('react');
-
-var ProductItem = require('ProductItem');
+import React from 'react';
+import ProductItem from 'ProductItem';
 
 var ProductList = React.createClass({
     render: function() {

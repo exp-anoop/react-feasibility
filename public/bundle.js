@@ -46,12 +46,21 @@
 
 	'use strict';
 
-	var React = __webpack_require__(1);
-	var ReactDOM = __webpack_require__(32);
+	var _react = __webpack_require__(1);
 
-	var ProductList = __webpack_require__(178);
+	var _react2 = _interopRequireDefault(_react);
 
-	ReactDOM.render(React.createElement(ProductList, null), document.getElementById('root'));
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _ProductList = __webpack_require__(178);
+
+	var _ProductList2 = _interopRequireDefault(_ProductList);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	_reactDom2.default.render(_react2.default.createElement(_ProductList2.default, null), document.getElementById('root'));
 
 /***/ },
 /* 1 */
@@ -21493,19 +21502,25 @@
 
 	'use strict';
 
-	var React = __webpack_require__(1);
+	var _react = __webpack_require__(1);
 
-	var ProductItem = __webpack_require__(179);
+	var _react2 = _interopRequireDefault(_react);
 
-	var ProductList = React.createClass({
+	var _ProductItem = __webpack_require__(179);
+
+	var _ProductItem2 = _interopRequireDefault(_ProductItem);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ProductList = _react2.default.createClass({
 	    displayName: 'ProductList',
 
 	    render: function render() {
-	        return React.createElement(
+	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            React.createElement(ProductItem, { name: 'Apple', price: 200 }),
-	            React.createElement(ProductItem, { name: 'Samsung', price: 140 })
+	            _react2.default.createElement(_ProductItem2.default, { name: 'Apple', price: 200 }),
+	            _react2.default.createElement(_ProductItem2.default, { name: 'Samsung', price: 140 })
 	        );
 	    }
 	});
@@ -21518,12 +21533,21 @@
 
 	'use strict';
 
-	var React = __webpack_require__(1);
+	var _react = __webpack_require__(1);
 
-	var ProductView = __webpack_require__(180);
-	var QuantityForm = __webpack_require__(181);
+	var _react2 = _interopRequireDefault(_react);
 
-	var ProductItem = React.createClass({
+	var _ProductView = __webpack_require__(180);
+
+	var _ProductView2 = _interopRequireDefault(_ProductView);
+
+	var _QuantityForm = __webpack_require__(181);
+
+	var _QuantityForm2 = _interopRequireDefault(_QuantityForm);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ProductItem = _react2.default.createClass({
 	    displayName: 'ProductItem',
 
 	    getDefaultProps: function getDefaultProps() {
@@ -21543,12 +21567,12 @@
 	        });
 	    },
 	    render: function render() {
-	        return React.createElement(
+	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            React.createElement(ProductView, { name: this.props.name, price: this.props.price, total: this.state.total }),
-	            React.createElement(QuantityForm, { onQuantityUpdate: this.handleOnQuantityUpdate }),
-	            React.createElement('hr', null)
+	            _react2.default.createElement(_ProductView2.default, { name: this.props.name, price: this.props.price, total: this.state.total }),
+	            _react2.default.createElement(_QuantityForm2.default, { onQuantityUpdate: this.handleOnQuantityUpdate }),
+	            _react2.default.createElement('hr', null)
 	        );
 	    }
 	});
@@ -21561,9 +21585,13 @@
 
 	"use strict";
 
-	var React = __webpack_require__(1);
+	var _react = __webpack_require__(1);
 
-	var ProductView = React.createClass({
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ProductView = _react2.default.createClass({
 	    displayName: "ProductView",
 
 	    getDefaultProps: function getDefaultProps() {
@@ -21575,22 +21603,22 @@
 	    },
 
 	    render: function render() {
-	        return React.createElement(
+	        return _react2.default.createElement(
 	            "div",
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	                "h2",
 	                null,
 	                "Name: ",
 	                this.props.name
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	                "h4",
 	                null,
 	                "Price: $",
 	                this.props.price
 	            ),
-	            React.createElement(
+	            _react2.default.createElement(
 	                "h3",
 	                null,
 	                "Total: $",
@@ -21608,9 +21636,13 @@
 
 	'use strict';
 
-	var React = __webpack_require__(1);
+	var _react = __webpack_require__(1);
 
-	var QuantityForm = React.createClass({
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var QuantityForm = _react2.default.createClass({
 	    displayName: 'QuantityForm',
 
 	    returnQuantity: function returnQuantity(e) {
@@ -21622,14 +21654,14 @@
 	    },
 
 	    render: function render() {
-	        return React.createElement(
+	        return _react2.default.createElement(
 	            'div',
 	            null,
-	            React.createElement(
+	            _react2.default.createElement(
 	                'form',
 	                { onSubmit: this.returnQuantity },
-	                React.createElement('input', { type: 'number', ref: 'quantity' }),
-	                React.createElement(
+	                _react2.default.createElement('input', { type: 'number', ref: 'quantity' }),
+	                _react2.default.createElement(
 	                    'button',
 	                    { type: 'submit' },
 	                    'Add Quantity'
