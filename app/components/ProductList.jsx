@@ -1,6 +1,6 @@
 var React = require('react');
 
-var ProductItem = require('./ProductItem.jsx');
+var ProductItem = require('ProductItem');
 
 var ProductList = React.createClass({
     render: function() {

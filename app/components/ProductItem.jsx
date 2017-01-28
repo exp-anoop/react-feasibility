@@ -1,8 +1,7 @@
 var React = require('react');
 
-var ProductView = require('./ProductView.jsx');
-var QuantityForm = require('./QuantityForm.jsx');
-
+var ProductView = require('ProductView');
+var QuantityForm = require('QuantityForm');
 
 var ProductItem = React.createClass({
     getDefaultProps: function() {

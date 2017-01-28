@@ -7,6 +7,13 @@ module.exports = {
         filename: "./public/bundle.js"
     },
     resolve: {
+        root: __dirname,
+        alias: {
+            ProductList: "app/components/ProductList.jsx",
+            ProductItem: "app/components/ProductItem.jsx",
+            ProductView: "app/components/ProductView.jsx",
+            QuantityForm: "app/components/QuantityForm.jsx"
+        },
         extensions: ['', '.js', '.jsx']
     },
     module: {
