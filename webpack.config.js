@@ -9,6 +9,9 @@ module.exports = {
     resolve: {
         root: __dirname,
         alias: {
+            Base: "app/components/Base.jsx",
+            Nav: "app/components/Nav.jsx",
+            About: "app/components/About.jsx",
             ProductList: "app/components/ProductList.jsx",
             ProductItem: "app/components/ProductItem.jsx",
             ProductView: "app/components/ProductView.jsx",
