@@ -7,6 +7,10 @@ import Home from 'Home';
 import About from 'About';
 import ProductList from 'ProductList';
 
+
+import 'style!css!foundation-sites/dist/css/foundation.css';
+$(document).foundation();
+
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Base}>
