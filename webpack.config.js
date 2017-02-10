@@ -11,6 +11,7 @@ module.exports = {
         alias: {
             Base: "app/components/Base.jsx",
             Nav: "app/components/Nav.jsx",
+            Home: "app/components/Home.jsx",
             About: "app/components/About.jsx",
             ProductList: "app/components/ProductList.jsx",
             ProductItem: "app/components/ProductItem.jsx",
@@ -28,7 +29,8 @@ module.exports = {
             },
             test: /.jsx?$/
         }]
-    }
+    },
+    devtool: 'cheap-module-eval-source-map'
 };
 
 

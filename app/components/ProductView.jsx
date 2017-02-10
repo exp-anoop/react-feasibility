@@ -8,13 +8,12 @@ var ProductView = React.createClass({
             total: 0
         }
     },
-
     render: function() {
         return (
             <div>
-                <h2>Name: {this.props.name}</h2>
+                <h3>Name: {this.props.name}</h3>
                 <h4>Price: ${this.props.price}</h4>
-                <h3>Total: ${this.props.total}</h3>
+                <h4>Total: ${this.props.total}</h4>
             </div>
         );
     }

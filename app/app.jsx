@@ -3,15 +3,16 @@ import ReactDOM from 'react-dom';
 import {Router, Route, hashHistory, IndexRoute} from "react-router";
 
 import Base from 'Base';
-import ProductList from 'ProductList';
+import Home from 'Home';
 import About from 'About';
+import ProductList from 'ProductList';
 
 ReactDOM.render(
     <Router history={hashHistory}>
         <Route path="/" component={Base}>
             <Route path="products" component={ProductList} />
             <Route path="about" component={About} />
-            <IndexRoute component={ProductList} />
+            <IndexRoute component={Home} />
         </Route>
     </Router>,
     document.getElementById('root')
