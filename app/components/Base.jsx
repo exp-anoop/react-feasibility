@@ -5,8 +5,11 @@ var Base = (props) => {
     return(
         <div>
             <Nav/>
-            <h1>My Application</h1>
-            {props.children}
+            <div className="row">
+                <div className="column large-12">
+                    {props.children}
+                </div>
+            </div>
         </div>
     );
 }
